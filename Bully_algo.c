@@ -10,8 +10,12 @@ void display()
 	for(i=1;i<=n;i++)
 		printf("\t %d",i);
 	printf("\nAlive-->");
-	for(i=1;i<=n;i++)
+	for(i=1;i<=n;i++){
 		printf("\t %d",list[i]);
+	        if(list[i]){
+                    c=i;
+                }
+	}
 	printf("\n coordinator is::%d",c);
 }
 void bully()
